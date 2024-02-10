@@ -1,0 +1,15 @@
+// Importing styles of reusable components
+@import "components/header";
+@import "components/newsletter";
+@import "components/footer";
+
+// Importing styles of specific pages
+@import "layouts/homepage";
+@import "layouts/about-us";
+@import "layouts/shop";
+@import "layouts/services";
+@import "layouts/service-single";
+
+// Importing fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");

@@ -1,0 +1,207 @@
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.yellow-button {
+  width: 220px;
+  height: 79px;
+  padding: 28px 39px;
+  @include myflex(flex, row, center, center, wrap);
+  gap: 10px;
+  border-radius: 16px;
+  background: #efd372;
+  border: none;
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+header {
+  margin-bottom: 64px;
+  margin-top: 64px;
+  .header-wrapper {
+    height: 72px;
+    max-width: 1600px;
+    width: 100%;
+    // padding: 40px 20px;
+    @media (max-width: 1650px) {
+      max-width: 1500px;
+    }
+    @media (max-width: 1550px) {
+      max-width: 1450px;
+    }
+    @media (max-width: 1500px) {
+      max-width: 1400px;
+    }
+    @media (max-width: 1410px) {
+      max-width: 1350px;
+    }
+    @media (max-width: 1360px) {
+      max-width: 1300px;
+    }
+    @media (max-width: 1320px) {
+      max-width: 1250px;
+    }
+    @media (max-width: 1270px) {
+      max-width: 1200px;
+    }
+    @media (max-width: 1220px) {
+      max-width: 1180px;
+    }
+    @media (max-width: 1180px) {
+      max-width: 1150px;
+    }
+    @media (max-width: 777px) {
+      @include myflex(flex, row, center, center, wrap);
+    }
+    @include myflex(flex, row, space-between, center, wrap);
+    .logo-menu {
+      max-width: 867.18px;
+      width: auto;
+      @include myflex(flex, row, space-between, center, wrap);
+      .logo {
+        max-width: 200px;
+        width: auto;
+        vertical-align: middle;
+        @include myflex(flex, row, space-between, center, wrap);
+        @media (max-width: 777px) {
+          padding-bottom: 30px;
+        }
+        .image {
+          height: 54px;
+          width: 37px;
+          vertical-align: middle;
+          padding-right: 8px;
+        }
+        .name {
+          color: #274c5b;
+          font-family: Roboto;
+          font-size: 38px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          @media (max-width: 1180px) {
+            font-size: 32px;
+          }
+        }
+      }
+      .navigation {
+        padding: 0 0 0 100px;
+        max-width: 620px;
+        width: auto;
+        vertical-align: middle;
+        @include myflex(flex, row, space-between, center, wrap);
+        @media (max-width: 1400px) {
+          padding: 0;
+        }
+        @media (max-width: 1270px) {
+          display: none;
+        }
+      }
+      ul {
+        vertical-align: middle;
+        @include myflex(flex, row, center, center, wrap);
+
+        a {
+          padding-left: 30px;
+          vertical-align: middle;
+          color: #274c5b;
+          font-family: Roboto;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+        .active {
+          color: #7eb693;
+        }
+        a:hover {
+          color: #7eb693;
+        }
+      }
+    }
+    .search-and-cart {
+      @include myflex(flex, row, space-evenly, center, nowrap);
+      width: 500px;
+      @media (max-width: 1180px) {
+        width: 570px;
+      }
+      @media (max-width: 526px) {
+        @include myflex(flex, row, space-between, center, wrap);
+      }
+
+      .search {
+        width: 324px;
+        height: 55px;
+        border-radius: 33px;
+        border: 1px solid #e0e0e0;
+        height: 55px;
+        background-color: #fafafa;
+        @include myflex(flex, row, flex-end, center, wrap);
+        @media (max-width: 777px) {
+          width: 280px;
+          margin-bottom: 12px;
+        }
+        @media (max-width: 545px) {
+          width: 250px;
+        }
+        @media (max-width: 526px) {
+          width: 100%;
+        }
+
+        img {
+          width: 56px;
+          height: 56px;
+          flex-shrink: 0;
+          padding: 5px;
+        }
+      }
+      .cart {
+        max-width: 148px;
+        width: 100%;
+        border-radius: 33px;
+        border: 1px solid #e0e0e0;
+        height: 55px;
+        @include myflex(flex, row, flex-start, center, nowrap);
+
+        img {
+          width: 56px;
+          height: 56px;
+          flex-shrink: 0;
+          padding: 5px;
+        }
+        .cart-text {
+          color: #274c5b;
+          font-family: Roboto;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          width: auto;
+        }
+      }
+      .burger-menu {
+        height: 54px;
+        width: 54px;
+        background-color: #7eb593;
+        border-radius: 16px;
+        @include myflex(flex, row, center, center, wrap);
+        @media (max-width: 1270px) {
+          display: flex;
+        }
+        @media (max-width: 526px) {
+          width: 54px;
+        }
+        display: none;
+        .fa-solid {
+          color: white;
+          @include myflex(flex, row, center, center, nowrap);
+        }
+      }
+    }
+  }
+}

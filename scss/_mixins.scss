@@ -1,0 +1,40 @@
+@mixin myflex($flex, $direction, $justify, $align, $wrap) {
+  display: $flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+
+@mixin green-text {
+  color: #68a47f;
+  font-family: Yellowtail;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin headline {
+  color: #274c5b;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+@mixin photo-box {
+  width: 683px;
+  height: 323px;
+  background-color: #7eb693;
+  border-radius: 32px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include myflex(flex, row, flex-start, center, wrap);
+  @media (max-width: 1402px) {
+    width: 500px;
+  }
+  @media (max-width: 1035px) {
+    width: 100%;
+  }
+}

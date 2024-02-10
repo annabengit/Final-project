@@ -1,0 +1,96 @@
+.homepage-1 {
+  height: 898px;
+  max-width: 100%;
+  background-color: #f1eff0;
+  background-image: url("../../images/homepage/background.png");
+  @media (max-width: 1650px) {
+    height: 800px;
+  }
+  @media (max-width: 736px) {
+    height: 700px;
+    margin-top: 100px;
+  }
+  @media (max-width: 526px) {
+    height: 600px;
+    margin-top: 150px;
+  }
+  .banner {
+    height: 100%;
+    width: 100%;
+    @include myflex(flex, column, center, flex-start, wrap);
+    gap: 16px;
+    @media (max-width: 1650px) {
+      align-items: center;
+      gap: 24px;
+    }
+    .green-text {
+      @include green-text;
+    }
+    .motto {
+      @include headline;
+      font-size: 70px;
+      max-width: 530px;
+      @media (max-width: 1650px) {
+        max-width: 50%;
+        text-align: center;
+      }
+      @media (max-width: 777px) {
+        font-size: 50px;
+      }
+      @media (max-width: 526px) {
+        font-size: 40px;
+        max-width: 60%;
+      }
+    }
+  }
+}
+
+.homepage-2 {
+  height: 500px;
+  width: 100%;
+  gap: 36px;
+  @include myflex(flex, row, center, center, wrap);
+  @media (max-width: 1035px) {
+    padding: 80px 0;
+  }
+  .photo-box-pink {
+    @include photo-box;
+    background-image: url("../../images/homepage/pink-photo.jpeg");
+    .green-text {
+      @include green-text;
+      color: #ffffff;
+    }
+    .description {
+      @include headline;
+      color: #ffffff;
+      font-size: 40px;
+      @media (max-width: 300px) {
+        font-size: 34px;
+      }
+    }
+  }
+  .photo-box-green {
+    @include photo-box;
+    background-image: url("../../images/homepage/green-photo.jpeg");
+    .green-text {
+      @include green-text;
+    }
+    .description {
+      @include headline;
+      font-size: 40px;
+      @media (max-width: 300px) {
+        font-size: 34px;
+      }
+    }
+  }
+  .text-box {
+    @include myflex(flex, column, center, flex-start, wrap);
+    width: 300px;
+    height: 148px;
+    padding-left: 40px;
+    @media (max-width: 300px) {
+      height: 200px;
+      width: 250px;
+    }
+  }
+}
