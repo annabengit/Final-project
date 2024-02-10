@@ -2,7 +2,7 @@
   height: 898px;
   max-width: 100%;
   background-color: #f1eff0;
-  background-image: url("../.././images/homepage/background.png");
+  background-image: url("../../../images/homepage/background.png");
   @media (max-width: 1650px) {
     height: 800px;
   }
@@ -55,7 +55,7 @@
   }
   .photo-box-pink {
     @include photo-box;
-    background-image: url("../.././images/homepage/pink-photo.jpeg");
+    background-image: url("../../../images/homepage/pink-photo.jpeg");
     .green-text {
       @include green-text;
       color: #ffffff;
@@ -71,7 +71,7 @@
   }
   .photo-box-green {
     @include photo-box;
-    background-image: url("../.././images/homepage/green-photo.jpeg");
+    background-image: url("../../../images/homepage/green-photo.jpeg");
     .green-text {
       @include green-text;
     }
