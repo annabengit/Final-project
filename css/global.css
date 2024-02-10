@@ -445,7 +445,7 @@ header .header-wrapper .search-and-cart .burger-menu .fa-solid {
   height: 898px;
   max-width: 100%;
   background-color: #f1eff0;
-  background-image: url("../../images/homepage/background.png");
+  background-image: url("../.././images/homepage/background.png");
 }
 @media (max-width: 1650px) {
   .homepage-1 {
@@ -542,7 +542,7 @@ header .header-wrapper .search-and-cart .burger-menu .fa-solid {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  background-image: url("../../images/homepage/pink-photo.jpeg");
+  background-image: url("../.././images/homepage/pink-photo.jpeg");
 }
 @media (max-width: 1402px) {
   .homepage-2 .photo-box-pink {
@@ -589,7 +589,7 @@ header .header-wrapper .search-and-cart .burger-menu .fa-solid {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  background-image: url("../../images/homepage/green-photo.jpeg");
+  background-image: url("../.././images/homepage/green-photo.jpeg");
 }
 @media (max-width: 1402px) {
   .homepage-2 .photo-box-green {
