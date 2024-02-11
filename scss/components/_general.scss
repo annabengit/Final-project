@@ -19,6 +19,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  cursor: pointer;
 }
 
 .blue-button {
@@ -36,8 +37,13 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  cursor: pointer;
 }
 
+button:hover {
+  background-color: gainsboro;
+  transition: 1s;
+}
 .green-text {
   color: #68a47f;
   font-family: Yellowtail;
@@ -47,6 +53,66 @@
   line-height: normal;
 }
 
+h1 {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+h2 {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+h3 {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+h4 {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+h5 {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+h6 {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  cursor: pointer;
+}
+
+h6:hover {
+  color: #7eb693;
+  transition: 0.3s;
+}
+
 p {
   color: #525c60;
   font-family: "Open Sans";
@@ -54,4 +120,88 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 165.4%; /* 29.772px */
+}
+
+.cardboard {
+  @include myflex(flex, row, center, center, wrap);
+  gap: 20px;
+}
+
+.product-card {
+  @include myflex(flex, column, center, center, nowrap);
+  min-width: 335px;
+  min-height: 483px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #f9f8f8;
+  @media (max-width: 785px) {
+    min-width: 480px;
+    min-height: 543px;
+  }
+  @media (max-width: 522px) {
+    min-width: 335px;
+    min-height: 483px;
+  }
+  @media (max-width: 430px) {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .mini-container {
+    padding: 24px;
+    .label {
+      max-width: 96px;
+      display: flex;
+      padding: 5px 12px 6px 12px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 8px;
+      background: #274c5b;
+      color: #fff;
+      text-align: center;
+      font-family: "Open Sans";
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+    .photo {
+      width: 335px;
+      height: 324px;
+    }
+    .name {
+      padding-bottom: 13px;
+    }
+    .line {
+      width: 100%;
+      height: 2px;
+      stroke-width: 1px;
+      background-color: #dedddd;
+    }
+    .price-rating {
+      width: 100%;
+      padding-top: 6px;
+      @include myflex(flex, row, space-between, center, nowrap);
+      .prices {
+        @include myflex(flex, row, space-between, center, nowrap);
+        gap: 8px;
+        .price {
+          text-align: center;
+          font-family: "Open Sans";
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        .old {
+          color: #b8b8b8;
+          text-decoration: line-through;
+        }
+        .new {
+          color: #274c5b;
+          font-weight: bold;
+        }
+      }
+    }
+  }
 }

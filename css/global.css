@@ -249,6 +249,7 @@ header .header-wrapper .logo-menu .logo .name {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  cursor: pointer;
 }
 @media (max-width: 1180px) {
   header .header-wrapper .logo-menu .logo .name {
@@ -299,6 +300,7 @@ header .header-wrapper .logo-menu ul .active {
 }
 header .header-wrapper .logo-menu ul a:hover {
   color: #7eb693;
+  transition: 0.3s;
 }
 header .header-wrapper .search-and-cart {
   display: flex;
@@ -440,6 +442,7 @@ header .header-wrapper .search-and-cart .burger-menu .fa-solid {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  cursor: pointer;
 }
 
 .blue-button {
@@ -461,6 +464,12 @@ header .header-wrapper .search-and-cart .burger-menu .fa-solid {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: gainsboro;
+  transition: 1s;
 }
 
 .green-text {
@@ -472,6 +481,66 @@ header .header-wrapper .search-and-cart .burger-menu .fa-solid {
   line-height: normal;
 }
 
+h1 {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+h2 {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+h3 {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+h4 {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+h5 {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+h6 {
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  cursor: pointer;
+}
+
+h6:hover {
+  color: #7eb693;
+  transition: 0.3s;
+}
+
 p {
   color: #525c60;
   font-family: "Open Sans";
@@ -479,6 +548,112 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 165.4%; /* 29.772px */
+}
+
+.cardboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-width: 335px;
+  min-height: 483px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #f9f8f8;
+}
+@media (max-width: 785px) {
+  .product-card {
+    min-width: 480px;
+    min-height: 543px;
+  }
+}
+@media (max-width: 522px) {
+  .product-card {
+    min-width: 335px;
+    min-height: 483px;
+  }
+}
+@media (max-width: 430px) {
+  .product-card {
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+.product-card .mini-container {
+  padding: 24px;
+}
+.product-card .mini-container .label {
+  max-width: 96px;
+  display: flex;
+  padding: 5px 12px 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #274c5b;
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.product-card .mini-container .photo {
+  width: 335px;
+  height: 324px;
+}
+.product-card .mini-container .name {
+  padding-bottom: 13px;
+}
+.product-card .mini-container .line {
+  width: 100%;
+  height: 2px;
+  stroke-width: 1px;
+  background-color: #dedddd;
+}
+.product-card .mini-container .price-rating {
+  width: 100%;
+  padding-top: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.product-card .mini-container .price-rating .prices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+.product-card .mini-container .price-rating .prices .price {
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.product-card .mini-container .price-rating .prices .old {
+  color: #b8b8b8;
+  text-decoration: line-through;
+}
+.product-card .mini-container .price-rating .prices .new {
+  color: #274c5b;
+  font-weight: bold;
 }
 
 .homepage-1 {
@@ -796,4 +971,23 @@ p {
   font-weight: 800;
   line-height: normal;
   font-size: 25px;
+}
+
+.homepage-4 {
+  min-height: 1343px;
+  width: 100%;
+  padding: 200px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #fff;
+  gap: 8px;
+}
+.homepage-4 .cardboard {
+  padding-top: 32px;
+}
+.homepage-4 .blue-button {
+  margin-top: 122px;
 }/*# sourceMappingURL=global.css.map */

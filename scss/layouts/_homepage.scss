@@ -171,3 +171,18 @@
     }
   }
 }
+
+.homepage-4 {
+  min-height: 1343px;
+  width: 100%;
+  padding: 200px 0;
+  @include myflex(flex, column, center, center, nowrap);
+  background-color: #fff;
+  gap: 8px;
+  .cardboard {
+    padding-top: 32px;
+  }
+  .blue-button {
+    margin-top: 122px;
+  }
+}
