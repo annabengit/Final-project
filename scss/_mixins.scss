@@ -31,9 +31,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   @include myflex(flex, row, flex-start, center, wrap);
-  @media (max-width: 1402px) {
-    width: 500px;
-  }
   @media (max-width: 1035px) {
     width: 100%;
   }

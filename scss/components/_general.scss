@@ -1,0 +1,57 @@
+.container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.yellow-button {
+  width: 220px;
+  height: 79px;
+  padding: 28px 39px;
+  @include myflex(flex, row, center, center, wrap);
+  gap: 10px;
+  border-radius: 16px;
+  background: #efd372;
+  border: none;
+  color: #274c5b;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.blue-button {
+  width: 220px;
+  height: 79px;
+  padding: 28px 39px;
+  @include myflex(flex, row, center, center, wrap);
+  gap: 10px;
+  border-radius: 16px;
+  background: #274c5b;
+  border: none;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.green-text {
+  color: #68a47f;
+  font-family: Yellowtail;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+p {
+  color: #525c60;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 165.4%; /* 29.772px */
+}
