@@ -6,23 +6,6 @@
   flex-wrap: $wrap;
 }
 
-@mixin green-text {
-  color: #68a47f;
-  font-family: Yellowtail;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-@mixin headline {
-  color: #274c5b;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-}
-
 @mixin photo-box {
   width: 683px;
   height: 323px;

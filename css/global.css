@@ -520,7 +520,7 @@ h4 {
 h5 {
   color: #274c5b;
   font-family: Roboto;
-  font-size: 30px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -700,21 +700,7 @@ p {
     gap: 24px;
   }
 }
-.homepage-1 .banner .green-text {
-  color: #68a47f;
-  font-family: Yellowtail;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
 .homepage-1 .banner .motto {
-  color: #274c5b;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  font-size: 70px;
   max-width: 530px;
 }
 @media (max-width: 1650px) {
@@ -775,22 +761,10 @@ p {
   }
 }
 .homepage-2 .photo-box-pink .green-text {
-  color: #68a47f;
-  font-family: Yellowtail;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
   color: #ffffff;
 }
 .homepage-2 .photo-box-pink .description {
-  color: #274c5b;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
   color: #ffffff;
-  font-size: 40px;
 }
 @media (max-width: 300px) {
   .homepage-2 .photo-box-pink .description {
@@ -815,22 +789,6 @@ p {
   .homepage-2 .photo-box-green {
     width: 100%;
   }
-}
-.homepage-2 .photo-box-green .green-text {
-  color: #68a47f;
-  font-family: Yellowtail;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.homepage-2 .photo-box-green .description {
-  color: #274c5b;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  font-size: 40px;
 }
 @media (max-width: 300px) {
   .homepage-2 .photo-box-green .description {
@@ -912,14 +870,6 @@ p {
     max-width: 70%;
   }
 }
-.homepage-3 .right-box .headline {
-  color: #274c5b;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  font-size: 50px;
-}
 .homepage-3 .right-box .rectangle-parent {
   display: flex;
   flex-direction: column;
@@ -964,14 +914,6 @@ p {
   align-items: flex-start;
   flex-wrap: nowrap;
 }
-.homepage-3 .right-box .rectangle-parent .rectangle-box .right-side .headline-small {
-  color: #274c5b;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  font-size: 25px;
-}
 
 .homepage-4 {
   min-height: 1343px;
@@ -984,6 +926,11 @@ p {
   flex-wrap: nowrap;
   background-color: #fff;
   gap: 8px;
+}
+@media (max-width: 1150px) {
+  .homepage-4 {
+    padding: 100px 0;
+  }
 }
 .homepage-4 .cardboard {
   padding-top: 32px;

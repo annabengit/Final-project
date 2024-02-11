@@ -24,12 +24,7 @@
       align-items: center;
       gap: 24px;
     }
-    .green-text {
-      @include green-text;
-    }
     .motto {
-      @include headline;
-      font-size: 70px;
       max-width: 530px;
       @media (max-width: 1650px) {
         max-width: 50%;
@@ -61,13 +56,10 @@
     @include photo-box;
     background-image: url("../../images/homepage/pink-photo.jpeg");
     .green-text {
-      @include green-text;
       color: #ffffff;
     }
     .description {
-      @include headline;
       color: #ffffff;
-      font-size: 40px;
       @media (max-width: 300px) {
         font-size: 34px;
       }
@@ -76,12 +68,7 @@
   .photo-box-green {
     @include photo-box;
     background-image: url("../../images/homepage/green-photo.jpeg");
-    .green-text {
-      @include green-text;
-    }
     .description {
-      @include headline;
-      font-size: 40px;
       @media (max-width: 300px) {
         font-size: 34px;
       }
@@ -135,10 +122,6 @@
       height: 70%;
       max-width: 70%;
     }
-    .headline {
-      @include headline;
-      font-size: 50px;
-    }
     .rectangle-parent {
       @include myflex(flex, column, center, flex-start, wrap);
       padding: 46px 0;
@@ -162,10 +145,6 @@
           width: 100%;
           min-height: 101px;
           @include myflex(flex, column, center, flex-start, nowrap);
-          .headline-small {
-            @include headline;
-            font-size: 25px;
-          }
         }
       }
     }
@@ -179,6 +158,9 @@
   @include myflex(flex, column, center, center, nowrap);
   background-color: #fff;
   gap: 8px;
+  @media (max-width: 1150px) {
+    padding: 100px 0;
+  }
   .cardboard {
     padding-top: 32px;
   }
