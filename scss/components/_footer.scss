@@ -1,0 +1,123 @@
+.footer-wrapper {
+  @include myflex(flex, row, center, flex-start, wrap);
+  @media (max-width: 1045px) {
+    justify-content: flex-start;
+    gap: 50px;
+  }
+  padding: 100px 0;
+  p {
+    color: #525c60;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 165%;
+    text-align: center;
+  }
+  .bold {
+    font-weight: 700;
+  }
+  .footer-left {
+    min-height: 307px;
+    max-width: 285px;
+    margin-right: 50px;
+    gap: 32px;
+    @media (max-width: 1154px) {
+      margin-right: 24px;
+    }
+    @include myflex(flex, column, center, flex-end, wrap);
+    @media (max-width: 1077px) {
+      align-items: flex-start;
+      margin-right: 0;
+    }
+    .parameters {
+      @include myflex(flex, column, center, flex-end, wrap);
+      @media (max-width: 1077px) {
+        align-items: flex-start;
+      }
+    }
+  }
+  .line {
+    min-width: 1px;
+    min-height: 336px;
+    background: #d4d4d4;
+    @media (max-width: 1131px) {
+      display: none;
+    }
+  }
+  .footer-middle {
+    max-width: 543px;
+    min-height: 307px;
+    margin: 0 40px;
+    @media (max-width: 1100px) {
+      margin: 0 20px;
+    }
+    @include myflex(flex, column, flex-start, center, wrap);
+    @media (max-width: 1077px) {
+      align-items: flex-start;
+    }
+    @media (max-width: 1045px) {
+      margin: 0;
+    }
+    @media (max-width: 827px) {
+      max-width: 90%;
+      min-height: 200px;
+    }
+    p {
+      @media (max-width: 1077px) {
+        text-align: start;
+      }
+    }
+    gap: 23px;
+    .socials {
+      @include myflex(flex, row, space-between, center, wrap);
+      margin-top: 26px;
+      gap: 15px;
+      .social-single {
+        @include myflex(flex, row, center, center, wrap);
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
+        background-color: rgba(239, 246, 241, 1);
+        border-radius: 50%;
+      }
+    }
+  }
+  .footer-right {
+    min-height: 307px;
+    max-width: 285px;
+    margin-left: 50px;
+    gap: 32px;
+
+    @include myflex(flex, column, center, flex-start, wrap);
+    @media (max-width: 1154px) {
+      margin-left: 24px;
+    }
+    @media (max-width: 1045px) {
+      margin: 0;
+    }
+  }
+}
+
+.logo {
+  max-width: 200px;
+  width: auto;
+  vertical-align: middle;
+  @include myflex(flex, row, space-around, center, wrap);
+  gap: 6px;
+
+  .image {
+    height: 54px;
+    width: 37px;
+    vertical-align: middle;
+  }
+  .name {
+    color: #274c5b;
+    font-family: Roboto;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+  }
+}
