@@ -1,38 +1,10 @@
 header {
-  margin-bottom: 64px;
-  margin-top: 64px;
   .header-wrapper {
     height: 72px;
     max-width: 1600px;
     width: 100%;
-    // padding: 40px 20px;
-    @media (max-width: 1650px) {
-      max-width: 1500px;
-    }
-    @media (max-width: 1550px) {
-      max-width: 1450px;
-    }
-    @media (max-width: 1500px) {
-      max-width: 1400px;
-    }
-    @media (max-width: 1410px) {
-      max-width: 1350px;
-    }
-    @media (max-width: 1360px) {
-      max-width: 1300px;
-    }
-    @media (max-width: 1320px) {
-      max-width: 1250px;
-    }
-    @media (max-width: 1270px) {
-      max-width: 1200px;
-    }
-    @media (max-width: 1220px) {
-      max-width: 1180px;
-    }
-    @media (max-width: 1180px) {
-      max-width: 1150px;
-    }
+    margin-bottom: 64px;
+    margin-top: 64px;
     @media (max-width: 777px) {
       @include myflex(flex, row, center, center, wrap);
     }

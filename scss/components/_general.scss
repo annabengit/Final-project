@@ -2,6 +2,9 @@
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
+  @media (max-width: 1600px) {
+    width: 95%;
+  }
 }
 
 .yellow-button {
@@ -38,6 +41,9 @@
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
+  a {
+    color: #fff;
+  }
 }
 
 button:hover {

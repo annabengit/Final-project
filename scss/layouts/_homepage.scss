@@ -173,4 +173,7 @@
   min-height: 323px;
   max-width: 1400px;
   width: 100%;
+  @media (max-width: 1410px) {
+    width: 95%;
+  }
 }

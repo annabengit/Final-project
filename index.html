@@ -9,8 +9,8 @@
     <script src="https://kit.fontawesome.com/69db25ddf6.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <div class="header-wrapper container">
+    <header class="container">
+      <div class="header-wrapper">
         <div class="logo-menu">
           <div class="logo">
             <img class="image" src="images/general/Logo.svg" alt="Organick-logo" />
@@ -19,12 +19,12 @@
           <div class="navigation">
             <nav>
               <ul>
-                <li><a class="active" href="">Home</a></li>
+                <li><a class="active" href="#" target="#">Home</a></li>
                 <li><a href="">About</a></li>
                 <li>
                   <a href="">Services</a>
                 </li>
-                <li><a href="">Shop</a></li>
+                <li><a href="pages/shop.html">Shop</a></li>
                 <li><a href="">Contact us</a></li>
               </ul>
             </nav>
@@ -53,22 +53,26 @@
         </button>
       </div>
     </section>
-    <section class="homepage-2 container">
-      <div class="photo-box-pink">
-        <div class="text-box">
-          <div class="green-text">Natural!!</div>
-          <div class="description"><h3 class="description">Get Garden Fresh Fruits</h3></div>
+    <section class="container">
+      <div class="homepage-2">
+        <div class="photo-box-pink">
+          <div class="text-box">
+            <div class="green-text">Natural!!</div>
+            <div class="description"><h3 class="description">Get Garden Fresh Fruits</h3></div>
+          </div>
         </div>
-      </div>
-      <div class="photo-box-green">
-        <div class="text-box">
-          <div class="green-text">Offer!!</div>
-          <div class="description"><h3>Get 10% off on Vegetables</h3></div>
+        <div class="photo-box-green">
+          <div class="text-box">
+            <div class="green-text">Offer!!</div>
+            <div class="description"><h3>Get 10% off on Vegetables</h3></div>
+          </div>
         </div>
       </div>
     </section>
-    <section class="homepage-3 container">
-      <div class="left-box"><img src="images/homepage/lemons.png" alt="lemons and oranges" /></div>
+    <section class="homepage-3 container" id="section3">
+      <div class="left-box">
+        <img src="images/homepage/lemons.png" alt="lemons and oranges" />
+      </div>
       <div class="right-box">
         <div class="green-text">About Us</div>
         <div class="headline"><h2>We Believe in Working Accredited Farmers</h2></div>
@@ -94,14 +98,14 @@
           </div>
         </div>
         <button class="blue-button">
-          Shop Now <img src="./images/homepage/button-arrow.svg" alt="arrow" />
+          <a href="pages/shop.html">Shop Now</a>  <img src="./images/homepage/button-arrow.svg" alt="arrow" />
         </button>
       </div>
     </section>
     <section class="homepage-4 container">
       <div class="green-text">Categories</div>
       <div class="headline"><h2>Our Products</h2></div>
-      <div class="cardboard">
+      <div class="cardboard container">
         <div class="product-card">
           <div class="mini-container">
             <div class="label">Vegetable</div>
@@ -226,15 +230,20 @@
         </div>
       </div>
       <button class="blue-button">
-        Load More <img src="./images/homepage/button-arrow.svg" alt="arrow" />
+        <a href="pages/shop.html">Load More</a> <img src="./images/homepage/button-arrow.svg" alt="arrow" />
       </button>
     </section>
+    <section class="homepage-5 container">
+
+    </section>
     <section class="homepage-7 container">
-      <div class="newsletter">
-        <div class="newsletter-left"><h2>Subscribe to our Newsletter</h2></div>
-        <div class="newsletter-right">
-          <div class="email"><input type="email" placeholder="Your Email Address" /></div>
-          <button class="blue-button">Subscribe</button>
+    
+        <div class="newsletter">
+          <div class="newsletter-left"><h2>Subscribe to our Newsletter</h2></div>
+          <div class="newsletter-right">
+            <div class="email"><input type="email" placeholder="Your Email Address" /></div>
+            <button class="blue-button">Subscribe</button>
+          </div>
         </div>
       </div>
     </section>

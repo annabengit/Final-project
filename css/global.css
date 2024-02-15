@@ -145,64 +145,17 @@ a {
   text-decoration: none;
 }
 
-header {
-  margin-bottom: 64px;
-  margin-top: 64px;
-}
 header .header-wrapper {
   height: 72px;
   max-width: 1600px;
   width: 100%;
+  margin-bottom: 64px;
+  margin-top: 64px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-}
-@media (max-width: 1650px) {
-  header .header-wrapper {
-    max-width: 1500px;
-  }
-}
-@media (max-width: 1550px) {
-  header .header-wrapper {
-    max-width: 1450px;
-  }
-}
-@media (max-width: 1500px) {
-  header .header-wrapper {
-    max-width: 1400px;
-  }
-}
-@media (max-width: 1410px) {
-  header .header-wrapper {
-    max-width: 1350px;
-  }
-}
-@media (max-width: 1360px) {
-  header .header-wrapper {
-    max-width: 1300px;
-  }
-}
-@media (max-width: 1320px) {
-  header .header-wrapper {
-    max-width: 1250px;
-  }
-}
-@media (max-width: 1270px) {
-  header .header-wrapper {
-    max-width: 1200px;
-  }
-}
-@media (max-width: 1220px) {
-  header .header-wrapper {
-    max-width: 1180px;
-  }
-}
-@media (max-width: 1180px) {
-  header .header-wrapper {
-    max-width: 1150px;
-  }
 }
 @media (max-width: 777px) {
   header .header-wrapper {
@@ -435,7 +388,7 @@ header .header-wrapper .search-and-cart .burger-menu .fa-solid {
   min-height: 113px;
   flex-shrink: 0;
 }
-@media (max-width: 380px) {
+@media (max-width: 3px) {
   .newsletter .newsletter-left {
     max-width: 300px;
   }
@@ -505,12 +458,13 @@ header .header-wrapper .search-and-cart .burger-menu .fa-solid {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding: 100px 0;
+  padding: 140px 0;
 }
 @media (max-width: 1045px) {
   .footer-wrapper {
     justify-content: flex-start;
     gap: 50px;
+    padding: 100px 0;
   }
 }
 .footer-wrapper p {
@@ -680,6 +634,11 @@ header .header-wrapper .search-and-cart .burger-menu .fa-solid {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 1600px) {
+  .container {
+    width: 95%;
+  }
+}
 
 .yellow-button {
   width: 220px;
@@ -723,6 +682,9 @@ header .header-wrapper .search-and-cart .burger-menu .fa-solid {
   font-weight: 700;
   line-height: normal;
   cursor: pointer;
+}
+.blue-button a {
+  color: #fff;
 }
 
 button:hover {
@@ -1201,4 +1163,84 @@ p {
   min-height: 323px;
   max-width: 1400px;
   width: 100%;
+}
+@media (max-width: 1410px) {
+  .homepage-7 {
+    width: 95%;
+  }
+}
+
+.shop-1 {
+  min-height: 450px;
+  max-width: 100%;
+  background-color: #f1eff0;
+  background-image: url("../../images/shop/shop-banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 736px) {
+  .shop-1 {
+    margin-top: 100px;
+    min-height: 300px;
+  }
+}
+@media (max-width: 526px) {
+  .shop-1 {
+    margin-top: 150px;
+  }
+}
+.shop-1 .name {
+  max-width: 150px;
+}
+@media (max-width: 1650px) {
+  .shop-1 .name {
+    max-width: 50%;
+    text-align: center;
+  }
+}
+@media (max-width: 526px) {
+  .shop-1 .name {
+    font-size: 40px;
+    max-width: 60%;
+  }
+}
+@media (max-width: 777px) {
+  .shop-1 .name h1 {
+    font-size: 50px;
+  }
+}
+
+.shop-2 {
+  min-height: 1343px;
+  width: 100%;
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #fff;
+  gap: 8px;
+}
+@media (max-width: 1150px) {
+  .shop-2 {
+    padding: 70px 0;
+  }
+}
+@media (max-width: 736px) {
+  .shop-2 {
+    padding: 40px 0;
+  }
+}
+.shop-2 .cardboard {
+  padding-top: 32px;
+}
+.shop-2 .blue-button {
+  margin-top: 122px;
 }/*# sourceMappingURL=global.css.map */
