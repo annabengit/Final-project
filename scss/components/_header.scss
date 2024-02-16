@@ -93,7 +93,7 @@ header {
         border: 1px solid #e0e0e0;
         height: 55px;
         background-color: #fafafa;
-        @include myflex(flex, row, flex-end, center, wrap);
+        @include myflex(flex, row, flex-end, center, nowrap);
         @media (max-width: 777px) {
           width: 280px;
           margin-bottom: 12px;
