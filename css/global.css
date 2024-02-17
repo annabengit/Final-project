@@ -471,6 +471,9 @@ header .header-wrapper .search-and-cart .burger-menu .fa-solid {
   line-height: 165%;
   text-align: center;
 }
+.footer-wrapper p a {
+  color: #525c60;
+}
 .footer-wrapper .bold {
   font-weight: 700;
 }
@@ -1987,6 +1990,9 @@ p {
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 8px;
+}
+.contact-2 .right-box a {
+  color: #525c60;
 }
 @media (max-width: 1700px) {
   .contact-2 .right-box {

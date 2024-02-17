@@ -76,6 +76,9 @@
     width: 100%;
     @include myflex(flex, column, center, flex-start, wrap);
     gap: 8px;
+    a {
+      color: #525c60;
+    }
     @media (max-width: 1700px) {
       max-width: 550px;
     }
