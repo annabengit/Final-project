@@ -13,19 +13,19 @@
       <div class="header-wrapper">
         <div class="logo-menu">
           <div class="logo">
-            <img class="image" src="../images/general/Logo.svg" alt="Organick-logo" />
-            <div class="name">Organick</div>
+            <a href="#"><img class="image" src="../images/general/Logo.svg" alt="Organick-logo" />
+            <div class="name">Organick</div></a>
           </div>
           <div class="navigation">
             <nav>
               <ul>
-                <li><a  href="../index.html">Home</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="../index.html" >Home</a></li>
+                <li><a href="about-us.html">About</a></li>
                 <li>
-                  <a href="">Services</a>
+                  <a  href="service.html">Services</a>
                 </li>
-                <li><a href="../pages/shop.html">Shop</a></li>
-                <li><a href="#" class="active">Contact us</a></li>
+                <li><a  href="shop.html">Shop</a></li>
+                <li><a class="active" href="#">Contact us</a></li>
               </ul>
             </nav>
           </div>
@@ -38,11 +38,18 @@
             <img src="../images/general/Cart-icon.svg" alt="cart" />
             <div class="cart-text">Cart (0)</div>
           </div>
-          <div class="burger-menu">
+          <div class="toggle_btn">
             <i class="fa-solid fa-bars burger"></i>
           </div>
         </div>
       </div>
+      <div class="dropdown_menu">
+        <li><a  href="../index.html">Home</a></li>
+        <li><a href="about-us.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+</div>
     </header>
    
 
@@ -200,7 +207,20 @@
           </div>
         </div>
       </footer>
+      <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
   
+        toggleBtn.onclick = function () {
+          dropDownMenu.classList.toggle('open')
+          const isOpen = dropDownMenu.classList.contains('open')
+  
+          toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark burger'
+          : 'fa-solid fa-bars burger'
+        }
+      </script>
   
   </body>
 </html>

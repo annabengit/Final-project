@@ -220,3 +220,15 @@ p {
   font-weight: 300;
   line-height: normal;
 }
+
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+* {
+  scroll-behavior: smooth;
+}

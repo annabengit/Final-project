@@ -7,15 +7,15 @@
     <link rel="icon" type="image/x-icon" href="./images/general/Logo.svg" />
     <link rel="stylesheet" href="css/global.css" />
     <script src="https://kit.fontawesome.com/69db25ddf6.js" crossorigin="anonymous"></script>
-
+<script></script>
   </head>
   <body>
     <header class="container">
       <div class="header-wrapper">
         <div class="logo-menu">
           <div class="logo">
-            <img class="image" src="images/general/Logo.svg" alt="Organick-logo" />
-            <div class="name">Organick</div>
+            <a href="#"><img class="image" src="images/general/Logo.svg" alt="Organick-logo" />
+            <div class="name">Organick</div></a>
           </div>
           <div class="navigation">
             <nav>
@@ -33,18 +33,24 @@
         </div>
         <div class="search-and-cart">
           <div class="search">
-
             <img src="images/general/Search-icon.svg" alt="search" />
           </div>
           <div class="cart">
             <img src="images/general/Cart-icon.svg" alt="cart" />
             <div class="cart-text">Cart (0)</div>
           </div>
-          <div class="burger-menu">
+          <div class="toggle_btn">
             <i class="fa-solid fa-bars burger"></i>
           </div>
         </div>
       </div>
+      <div class="dropdown_menu">
+        <li><a class="active" href="#" target="#">Home</a></li>
+        <li><a href="pages/about-us.html">About</a></li>
+        <li><a href="pages/service.html">Services</a></li>
+        <li><a href="pages/shop.html">Shop</a></li>
+        <li><a href="pages/contact.html">Contact us</a></li>
+</div>
     </header>
     <section class="homepage-1">
       <div class="banner container">
@@ -413,7 +419,21 @@
           <p>Changelog</p>
         </div>
       </div>
-     
+      <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+  
+        toggleBtn.onclick = function () {
+          dropDownMenu.classList.toggle('open')
+          const isOpen = dropDownMenu.classList.contains('open')
+  
+          toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark burger'
+          : 'fa-solid fa-bars burger'
+        }
+      </script>
+    
   </body>
 </html>
 

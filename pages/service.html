@@ -10,40 +10,47 @@
   </head>
   <body>
     <header class="container">
-      <div class="header-wrapper">
-        <div class="logo-menu">
-          <div class="logo">
-            <img class="image" src="../images/general/Logo.svg" alt="Organick-logo" />
-            <div class="name">Organick</div>
+        <div class="header-wrapper">
+          <div class="logo-menu">
+            <div class="logo">
+              <a href="#"><img class="image" src="../images/general/Logo.svg" alt="Organick-logo" />
+              <div class="name">Organick</div></a>
+            </div>
+            <div class="navigation">
+              <nav>
+                <ul>
+                  <li><a href="../index.html" >Home</a></li>
+                  <li><a href="about-us.html">About</a></li>
+                  <li>
+                    <a class="active" href="#">Services</a>
+                  </li>
+                  <li><a href="shop.html">Shop</a></li>
+                  <li><a href="contact.html">Contact us</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
-          <div class="navigation">
-            <nav>
-              <ul>
-                <li><a  href="../index.html">Home</a></li>
-                <li><a href="about-us.html">About</a></li>
-                <li>
-                  <a href="#" class="active">Services</a>
-                </li>
-                <li><a href="shop.html" >Shop</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-              </ul>
-            </nav>
+          <div class="search-and-cart">
+            <div class="search">
+              <img src="../images/general/Search-icon.svg" alt="search" />
+            </div>
+            <div class="cart">
+              <img src="../images/general/Cart-icon.svg" alt="cart" />
+              <div class="cart-text">Cart (0)</div>
+            </div>
+            <div class="toggle_btn">
+              <i class="fa-solid fa-bars burger"></i>
+            </div>
           </div>
         </div>
-        <div class="search-and-cart">
-          <div class="search">
-            <img src="../images/general/Search-icon.svg" alt="search" />
-          </div>
-          <div class="cart">
-            <img src="../images/general/Cart-icon.svg" alt="cart" />
-            <div class="cart-text">Cart (0)</div>
-          </div>
-          <div class="burger-menu">
-            <i class="fa-solid fa-bars burger"></i>
-          </div>
-        </div>
-      </div>
-    </header>
+        <div class="dropdown_menu">
+          <li><a  href="../index.html">Home</a></li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="service.html">Services</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+  </div>
+      </header>
     <section class="services-1">
     </section>
 
@@ -155,7 +162,20 @@
           </div>
         </div>
       </footer>
+      <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
   
+        toggleBtn.onclick = function () {
+          dropDownMenu.classList.toggle('open')
+          const isOpen = dropDownMenu.classList.contains('open')
+  
+          toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark burger'
+          : 'fa-solid fa-bars burger'
+        }
+      </script>
   
   
   </body>

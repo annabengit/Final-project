@@ -5,7 +5,7 @@ header {
     width: 100%;
     margin-bottom: 64px;
     margin-top: 64px;
-    @media (max-width: 777px) {
+    @media (max-width: 781px) {
       @include myflex(flex, row, center, center, wrap);
     }
     @include myflex(flex, row, space-between, center, wrap);
@@ -14,29 +14,31 @@ header {
       width: auto;
       @include myflex(flex, row, space-between, center, wrap);
       .logo {
-        max-width: 200px;
-        width: auto;
-        vertical-align: middle;
-        @include myflex(flex, row, space-between, center, wrap);
-        @media (max-width: 777px) {
-          padding-bottom: 30px;
-        }
-        .image {
-          height: 54px;
-          width: 37px;
+        a {
+          max-width: 200px;
+          width: auto;
           vertical-align: middle;
-          padding-right: 8px;
-        }
-        .name {
-          color: #274c5b;
-          font-family: Roboto;
-          font-size: 38px;
-          font-style: normal;
-          font-weight: 700;
-          line-height: normal;
-          cursor: pointer;
-          @media (max-width: 1180px) {
-            font-size: 32px;
+          @include myflex(flex, row, space-between, center, wrap);
+          @media (max-width: 777px) {
+            padding-bottom: 16px;
+          }
+          .image {
+            height: 54px;
+            width: 37px;
+            vertical-align: middle;
+            padding-right: 8px;
+          }
+          .name {
+            color: #274c5b;
+            font-family: Roboto;
+            font-size: 38px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            cursor: pointer;
+            @media (max-width: 1180px) {
+              font-size: 32px;
+            }
           }
         }
       }
@@ -96,13 +98,13 @@ header {
         @include myflex(flex, row, flex-end, center, nowrap);
         @media (max-width: 777px) {
           width: 280px;
-          margin-bottom: 12px;
         }
         @media (max-width: 545px) {
           width: 250px;
         }
         @media (max-width: 526px) {
           width: 100%;
+          margin-bottom: 12px;
         }
 
         img {
@@ -136,7 +138,7 @@ header {
           width: auto;
         }
       }
-      .burger-menu {
+      .toggle_btn {
         height: 54px;
         width: 54px;
         background-color: #7eb593;
@@ -155,5 +157,57 @@ header {
         }
       }
     }
+  }
+  .dropdown_menu {
+    display: none;
+    right: 2rem;
+    top: 130px;
+    @media (max-width: 1270px) {
+      display: block;
+    }
+    position: absolute;
+    width: 160px;
+    height: 0;
+    background-color: rgba(239, 211, 114, 1);
+    backdrop-filter: blur(15px);
+    border-radius: 16px;
+    overflow: hidden;
+    transition: height 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    @media (max-width: 781px) {
+      top: 170px;
+      right: 4rem;
+    }
+    @media (max-width: 777px) {
+      top: 184px;
+      right: 4.5rem;
+    }
+    @media (max-width: 640px) {
+      right: 1.5rem;
+    }
+    @media (max-width: 526px) {
+      top: 255px;
+      right: 1rem;
+    }
+    li {
+      @include myflex(flex, column, center, center, nowrap);
+      a {
+        vertical-align: middle;
+        color: #274c5b;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-top: 8px;
+      }
+      a:hover {
+        color: #7eb693;
+        transition: 0.3s;
+      }
+    }
+  }
+  .dropdown_menu.open {
+    height: 180px;
+    padding-top: 16px;
   }
 }
