@@ -2,7 +2,7 @@
   min-height: 898px;
   max-width: 100%;
   background-color: #f1eff0;
-  background-image: url("../../images/homepage/background.png");
+  background-image: url("../images/homepage/background.png");
   @include myflex(flex, column, center, center, wrap);
   @media (max-width: 1650px) {
     height: 800px;
@@ -55,7 +55,7 @@
   }
   .photo-box-pink {
     @include photo-box;
-    background-image: url("../../images/homepage/pink-photo.jpeg");
+    background-image: url("../images/homepage/pink-photo.jpeg");
     .green-text {
       color: #ffffff;
     }
@@ -68,7 +68,7 @@
   }
   .photo-box-green {
     @include photo-box;
-    background-image: url("../../images/homepage/green-photo.jpeg");
+    background-image: url("../images/homepage/green-photo.jpeg");
     .description {
       @media (max-width: 300px) {
         font-size: 34px;
@@ -175,8 +175,8 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  background-image: url("../../images/homepage/testimonial-left.png"),
-    url("../../images/homepage/testimonial-right.png");
+  background-image: url("../images/homepage/testimonial-left.png"),
+    url("../images/homepage/testimonial-right.png");
   background-position: left top, right top;
   background-size: auto 100vh;
   background-repeat: no-repeat;
@@ -201,7 +201,7 @@
       }
       .testimonial-woman {
         border-radius: 50%;
-        background-image: url("../../images/homepage/testimonial-woman.png");
+        background-image: url("../images/homepage/testimonial-woman.png");
         min-height: 120px;
         min-width: 120px;
         margin-top: 41px;
@@ -209,7 +209,7 @@
       .stars {
         min-height: 27px;
         min-width: 120px;
-        background-image: url("../../images/general/stars.svg");
+        background-image: url("../images/general/stars.svg");
         background-size: cover;
         background-repeat: no-repeat;
         margin-top: 20px;

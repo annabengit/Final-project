@@ -2,7 +2,7 @@
   min-height: 450px;
   max-width: 100%;
   background-color: #f1eff0;
-  background-image: url("../../images/services/services-banner.jpeg");
+  background-image: url("../images/services/services-banner.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -110,7 +110,7 @@
   min-height: 1050px;
   width: 100%;
   background-color: antiquewhite;
-  background-image: url("../../images/services/video-banner.jpeg");
+  background-image: url("../images/services/video-banner.jpeg");
   @include myflex(flex, column, center, center, nowrap);
   .video-content {
     @include myflex(flex, column, center, center, nowrap);
@@ -126,9 +126,9 @@
   .video {
     position: relative;
     width: 100%;
-    max-width: 800px; /* Set a max-width if you want to limit the video size */
+    max-width: 800px;
     margin: 0 auto;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio (height: width) */
+    padding-bottom: 56.25%;
     overflow: hidden;
   }
 

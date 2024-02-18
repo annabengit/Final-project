@@ -157,14 +157,3 @@ header {
     }
   }
 }
-
-.navigation {
-  display: none; /* Initially hide the navigation */
-  /* Other styles for navigation */
-}
-
-.navigation.show {
-  display: flex; /* Show the navigation when the show class is present */
-  flex-direction: column; /* Display the navigation links in a column */
-  /* Other styles for showing the navigation */
-}

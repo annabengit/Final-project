@@ -371,21 +371,10 @@ header .header-wrapper .search-and-cart .burger-menu .fa-solid {
   flex-wrap: nowrap;
 }
 
-.navigation {
-  display: none; /* Initially hide the navigation */
-  /* Other styles for navigation */
-}
-
-.navigation.show {
-  display: flex; /* Show the navigation when the show class is present */
-  flex-direction: column; /* Display the navigation links in a column */
-  /* Other styles for showing the navigation */
-}
-
 .newsletter {
   min-height: 323px;
   background-color: skyblue;
-  background-image: url("../.././images/general/newsletter-banner.jpeg");
+  background-image: url("../images/general/newsletter-banner.jpeg");
   background-repeat: repeat;
   border-radius: 32px;
   display: flex;
@@ -897,7 +886,7 @@ p {
   min-height: 898px;
   max-width: 100%;
   background-color: #f1eff0;
-  background-image: url("../../images/homepage/background.png");
+  background-image: url("../images/homepage/background.png");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -989,7 +978,7 @@ p {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  background-image: url("../../images/homepage/pink-photo.jpeg");
+  background-image: url("../images/homepage/pink-photo.jpeg");
 }
 @media (max-width: 1035px) {
   .homepage-2 .photo-box-pink {
@@ -1019,7 +1008,7 @@ p {
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  background-image: url("../../images/homepage/green-photo.jpeg");
+  background-image: url("../images/homepage/green-photo.jpeg");
 }
 @media (max-width: 1035px) {
   .homepage-2 .photo-box-green {
@@ -1180,7 +1169,7 @@ p {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-image: url("../../images/homepage/testimonial-left.png"), url("../../images/homepage/testimonial-right.png");
+  background-image: url("../images/homepage/testimonial-left.png"), url("../images/homepage/testimonial-right.png");
   background-position: left top, right top;
   background-size: auto 100vh;
   background-repeat: no-repeat;
@@ -1222,7 +1211,7 @@ p {
 }
 .homepage-5 .testimonial-content .testimonial-up .testimonial-woman {
   border-radius: 50%;
-  background-image: url("../../images/homepage/testimonial-woman.png");
+  background-image: url("../images/homepage/testimonial-woman.png");
   min-height: 120px;
   min-width: 120px;
   margin-top: 41px;
@@ -1230,7 +1219,7 @@ p {
 .homepage-5 .testimonial-content .testimonial-up .stars {
   min-height: 27px;
   min-width: 120px;
-  background-image: url("../../images/general/stars.svg");
+  background-image: url("../images/general/stars.svg");
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 20px;
@@ -1369,7 +1358,7 @@ p {
   min-height: 450px;
   max-width: 100%;
   background-color: #f1eff0;
-  background-image: url("../../images/about/about-us-banner.png");
+  background-image: url("../images/about/about-us-banner.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1606,7 +1595,7 @@ p {
   min-height: 450px;
   max-width: 100%;
   background-color: #f1eff0;
-  background-image: url("../../images/shop/shop-banner.png");
+  background-image: url("../images/shop/shop-banner.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1681,7 +1670,7 @@ p {
   min-height: 450px;
   max-width: 100%;
   background-color: #f1eff0;
-  background-image: url("../../images/services/services-banner.jpeg");
+  background-image: url("../images/services/services-banner.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1839,7 +1828,7 @@ p {
   min-height: 1050px;
   width: 100%;
   background-color: antiquewhite;
-  background-image: url("../../images/services/video-banner.jpeg");
+  background-image: url("../images/services/video-banner.jpeg");
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1864,9 +1853,9 @@ p {
 .services-3 .video {
   position: relative;
   width: 100%;
-  max-width: 800px; /* Set a max-width if you want to limit the video size */
+  max-width: 800px;
   margin: 0 auto;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio (height: width) */
+  padding-bottom: 56.25%;
   overflow: hidden;
 }
 .services-3 .video iframe {
@@ -1881,7 +1870,7 @@ p {
   min-height: 450px;
   max-width: 100%;
   background-color: #f1eff0;
-  background-image: url("../../images/contact/contact-banner.png");
+  background-image: url("../images/contact/contact-banner.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

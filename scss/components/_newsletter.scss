@@ -1,7 +1,7 @@
 .newsletter {
   min-height: 323px;
   background-color: skyblue;
-  background-image: url("../.././images/general/newsletter-banner.jpeg");
+  background-image: url("../images/general/newsletter-banner.jpeg");
   background-repeat: repeat;
   border-radius: 32px;
   @include myflex(flex, row, space-around, center, wrap);
